@@ -5,6 +5,7 @@ import '../style/Register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios"
 const Register = () => {
+  const navigate = useNavigate()
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -21,17 +22,19 @@ const Register = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     let data = { name, email, pass:password }
-    axios.post("http://localhost:8080/user/register", data)
+   await axios.post("https://thoughtful-fawn-slippers.cyclic.app/user/register", data)
       .then(res => {
         console.log(res.data)
         alert(res.data.msg)
+navigate("/login")
       })
     setName("")
     setEmail("")
     setPassword("")
+    
   };
 
   return (

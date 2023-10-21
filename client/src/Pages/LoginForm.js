@@ -19,7 +19,7 @@ const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = { email, pass:password }
-    axios.post("http://localhost:8080/user/login", data)
+    axios.post("https://thoughtful-fawn-slippers.cyclic.app/user/login", data)
       .then(res => {
         console.log(res.data);
         localStorage.setItem("userData", JSON.stringify(res.data))
@@ -35,7 +35,7 @@ const navigate = useNavigate()
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h2>Login</h2>
+      <h2>User Login</h2>
         <div className="form-group">
           <input
             type="email"
@@ -67,3 +67,5 @@ const navigate = useNavigate()
 };
 
 export default LoginForm;
+
+

@@ -1,0 +1,26 @@
+.item{
+    width: 309px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px;
+}
+.item img{
+   width: 100%;
+}
+
+.fa-search{
+    font-size: 20px;
+}
+.add_fav{
+width: 40%;
+font-size: 15px;
+}
+.search_div{
+    border: 1px solid rgb(209, 206, 206);
+    border-radius: 3px;
+    width: 300px;
+}
+.search_div input{
+    border: none;
+    border-bottom: 2px solid black;
+    
+}

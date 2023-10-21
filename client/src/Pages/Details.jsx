@@ -4,8 +4,7 @@ import { useParams } from "react-router-dom";
 export const Details = () => {
     let { id } = useParams();
     console.log(id)
-    // https://api.spoonacular.com/recipes/{id}/information
-
+ 
     const apiKey = '669aaaeebc2c443dad9cb08436de8d23';
     const apiUrl = `https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&apiKey=${apiKey}`;
     const [data, setData] = useState([])
