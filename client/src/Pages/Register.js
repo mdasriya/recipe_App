@@ -1,10 +1,10 @@
-// Register.js
 
 import React, { useState } from 'react';
 import '../style/Register.css';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios"
 const Register = () => {
+
   const navigate = useNavigate()
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -22,19 +22,19 @@ const Register = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    let data = { name, email, pass:password }
-   await axios.post("https://thoughtful-fawn-slippers.cyclic.app/user/register", data)
+    let data = { name, email, pass: password }
+    await axios.post("https://thoughtful-fawn-slippers.cyclic.app/user/register", data)
       .then(res => {
         console.log(res.data)
         alert(res.data.msg)
-navigate("/login")
+        navigate("/login")
       })
     setName("")
     setEmail("")
     setPassword("")
-    
+
   };
 
   return (
@@ -73,8 +73,8 @@ navigate("/login")
         </div>
         <button type="submit">Register</button>
         <div className='redirect'>
-            <p>Already User </p>
-        <Link to={"/login"}>Login</Link>
+          <p>Already User </p>
+          <Link to={"/login"}>Login</Link>
         </div>
       </form>
     </div>
