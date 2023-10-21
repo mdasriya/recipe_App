@@ -1,0 +1,43 @@
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+   flex-wrap: wrap;
+    gap: 20px;
+  /* border: 1px solid blue; */
+  padding: 5px 40px;
+}
+
+.container {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-wrap: wrap;
+}
+.container img{
+    width: 40%;
+}
+.delete_btn{
+    background-color: red;
+    color: #fff;
+
+}
+
+@media (max-width: 768px) {
+    .main{
+        display: grid;
+        grid-template-columns: auto auto;
+       flex-wrap: wrap;
+        gap: 20px;
+      /* border: 1px solid blue; */
+      padding: 5px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main{
+        display: grid;
+        grid-template-columns: auto ;
+       flex-wrap: wrap;
+        gap: 20px;
+      /* border: 1px solid blue; */
+      padding: 5px 40px;
+    }
+}
