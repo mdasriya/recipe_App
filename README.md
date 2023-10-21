@@ -46,19 +46,4 @@ Steps
 2. Second step
 3. Third step
 
-## Usage
-
-Explain how to use your project. Provide examples or code snippets to show how it works in practice.
-
-## Contributing
-
-Explain how others can contribute to your project. Include guidelines for reporting issues, suggesting enhancements, or submitting pull requests.
-
-## License
-
-State the license under which your project is distributed. Include a link to the full text of the license for more details.
-
-## Acknowledgements
-
-Mention any resources, libraries, or tools that you used or were inspired by during the development of your project. Give credit to those who contributed to your project.
 
